@@ -1,0 +1,29 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Tuya Home",
+        "description": "Found {count} new Tuya device(s) on the local network. Pick one or enter it manually.",
+        "data": { "device": "Device" }
+      },
+      "device": {
+        "title": "Tuya device",
+        "description": "The local key is the `local_key` field from the Tuya developer platform (API Explorer → device details).",
+        "data": {
+          "name": "Name",
+          "device_id": "Device ID",
+          "host": "IP address",
+          "local_key": "Local key",
+          "protocol_version": "Protocol version"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to the device on port 6668.",
+      "invalid_auth": "The device rejected the local key.",
+      "no_status": "The device did not answer the status query (unsupported device type).",
+      "invalid_key_length": "The local key must be exactly 16 characters."
+    },
+    "abort": { "already_configured": "This device is already configured." }
+  }
+}
